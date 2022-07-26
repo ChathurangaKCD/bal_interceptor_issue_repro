@@ -1,4 +1,6 @@
 This request doesn't complete.
+* Read the request body in interceptor.
+* Forward the request in service.
 ```
 curl --location --request POST 'http://localhost:8090/api/test?read_body_in_interceptor=true' \
 --header 'Content-Type: text/plain' \
@@ -12,6 +14,9 @@ time = 2022-07-26T12:47:05.752+05:30 level = INFO module = chathurangada/app_tes
 ```
 
 This one works as expected.
+* Read the request body in interceptor.
+* Read the request body in the bal service.
+* Forward the request in service.
 ```
 curl --location --request POST 'http://localhost:8090/api/test?read_body_in_svc=true&read_body_in_interceptor=true' \
 --header 'Content-Type: text/plain' \
