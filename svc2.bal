@@ -1,7 +1,8 @@
-import ballerina/http;
+import ballerina/log;
 
 service /api on serviceListener2 {
-    resource function get test() returns json {
+    resource function default test() returns json {
+        log:printInfo("serviceListener2: request recieved" );
         return {api2: true};
     }
 }

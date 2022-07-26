@@ -1,5 +1,5 @@
 import ballerina/http;
-import app.test.interceptors;
+import app_test.interceptors;
 
 interceptors:RequestValidator requestValidator = new;
 

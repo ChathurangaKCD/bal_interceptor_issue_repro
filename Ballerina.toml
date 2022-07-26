@@ -1,6 +1,6 @@
 [package]
 org = "chathurangada"
-name = "app.test"
+name = "app_test"
 version = "0.1.0"
 distribution = "2201.1.1"
 
